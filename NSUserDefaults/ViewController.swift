@@ -23,6 +23,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var stateLabel: UILabel!
     
+    @IBOutlet weak var loginButton: UIButton!
+    
     var defaults = NSUserDefaults.standardUserDefaults()
     
     override func viewDidLoad() {
@@ -73,6 +75,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         if let sname = defaults.stringForKey("savedstate") {
             stateLabel.text = "State: \(sname)"
         }
+        
         
         //Dismiss keyboard
         firstNameEntry.resignFirstResponder()
