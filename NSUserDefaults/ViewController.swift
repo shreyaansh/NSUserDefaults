@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
     
     
     @IBOutlet weak var firstNameEntry: UITextField!
@@ -42,6 +42,12 @@ class ViewController: UIViewController {
         if let sname = defaults.stringForKey("savedstate") {
             stateLabel.text = "State: \(sname)"
         }
+        
+        //Set keyboard delegates
+        firstNameEntry.delegate = self
+        lastNameEntry.delegate = self
+        stateEntry.delegate = self
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -67,6 +73,22 @@ class ViewController: UIViewController {
         if let sname = defaults.stringForKey("savedstate") {
             stateLabel.text = "State: \(sname)"
         }
+        
+        //Dismiss keyboard
+        firstNameEntry.resignFirstResponder()
+        lastNameEntry.resignFirstResponder()
+        stateEntry.resignFirstResponder()
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return true
+    }
+    
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        firstNameEntry.resignFirstResponder()
+        lastNameEntry.resignFirstResponder()
+        stateEntry.resignFirstResponder()
     }
     
 }
