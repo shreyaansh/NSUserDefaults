@@ -23,6 +23,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var stateLabel: UILabel!
     
+    @IBOutlet weak var newLabel: UILabel!
+    
     var defaults = NSUserDefaults.standardUserDefaults()
     
     override func viewDidLoad() {

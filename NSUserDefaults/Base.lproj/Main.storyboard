@@ -36,12 +36,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="State:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tSN-mR-TPm">
-                                <rect key="frame" x="20" y="346" width="560" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Name:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iKG-ys-Xd3">
                                 <rect key="frame" x="20" y="288" width="560" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -80,8 +74,14 @@
                                     <action selector="saveAndDisplay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vbt-U7-1yx"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="State:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tSN-mR-TPm">
+                                <rect key="frame" x="20" y="346" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="leadingMargin" secondItem="cUw-Hp-ZpN" secondAttribute="leading" id="29D-68-DPz"/>
                             <constraint firstAttribute="trailingMargin" secondItem="AoS-fC-QOD" secondAttribute="trailing" id="58s-UO-Jpg"/>
@@ -112,7 +112,7 @@
                     <connections>
                         <outlet property="clickedMe" destination="RxN-I4-hNp" id="qV8-ed-8ET"/>
                         <outlet property="firstNameEntry" destination="4fM-ZE-x0t" id="h21-uO-26Z"/>
-                        <outlet property="firstNameLabel" destination="iKG-ys-Xd3" id="dLU-ns-Je1"/>
+                        <outlet property="firstNameLabel" destination="iKG-ys-Xd3" id="GIs-gM-2Qx"/>
                         <outlet property="lastNameEntry" destination="MY5-kR-JJq" id="UEW-ea-uIN"/>
                         <outlet property="lastNameLabel" destination="AoS-fC-QOD" id="dFg-pZ-4Wd"/>
                         <outlet property="stateEntry" destination="cUw-Hp-ZpN" id="Z1a-gf-j1j"/>
