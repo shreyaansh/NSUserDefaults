@@ -23,8 +23,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var stateLabel: UILabel!
     
-    @IBOutlet weak var loginButton: UIButton!
-    
     var defaults = NSUserDefaults.standardUserDefaults()
     
     override func viewDidLoad() {
@@ -86,6 +84,22 @@ class ViewController: UIViewController, UITextFieldDelegate {
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         self.view.endEditing(true)
         return true
+    }
+    
+    @IBOutlet weak var clickedMe: UIButton!
+    
+    @IBAction func clickMe(sender: AnyObject) {
+        //print("It was clicked!")
+        clickedMe.backgroundColor = array[randomFunction()]
+        
+    }
+    
+    //Color Array
+    let array : [UIColor] = [UIColor.blackColor(), UIColor.blueColor(), UIColor.brownColor(), UIColor.clearColor(), UIColor.cyanColor(), UIColor.darkGrayColor(), UIColor.grayColor(), UIColor.grayColor(), UIColor.redColor()]
+    
+    
+    func randomFunction() -> Int {
+        return Int(arc4random_uniform(UInt32(array.count)))
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
