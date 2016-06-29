@@ -484,6 +484,7 @@
 				AC4B80171D2243D70010DAF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AC4B80181D2243D70010DAF6 /* Build configuration list for PBXNativeTarget "NSUserDefaultsTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +493,7 @@
 				AC4B801A1D2243D70010DAF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AC4B801B1D2243D70010DAF6 /* Build configuration list for PBXNativeTarget "NSUserDefaultsUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +502,7 @@
 				AC4B801D1D2243D70010DAF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
